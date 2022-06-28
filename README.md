@@ -55,4 +55,5 @@ If you get errors regarding `ip6table_filter`, you should probably disable ipv6 
 
 # Credits
 All credits goes to [hotio.dev](https://hotio.dev)!
-You can use the Hotio [discord](https://hotio.dev/discord) server for support.
+
+You can use the Hotio [discord](https://hotio.dev/discord) server for support, but probably not for this image specifically.
