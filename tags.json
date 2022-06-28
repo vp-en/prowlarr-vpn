@@ -1,0 +1,27 @@
+{
+  "tags": [
+    {
+      "name": "release",
+      "version": "",
+      "commit": "",
+      "upstream": "master",
+      "lastUpdated": ""
+    },
+    {
+      "name": "testing",
+      "version": "0.4.1.1838",
+      "commit": "05a568b",
+      "upstream": "develop",
+      "lastUpdated": "2022-06-26T15:53:17.029Z"
+    },
+    {
+      "name": "nightly",
+      "version": "0.4.2.1843",
+      "commit": "6043db3",
+      "upstream": "nightly",
+      "lastUpdated": "2022-06-28T03:31:14.297Z"
+    }
+  ],
+  "pulls": 8982347,
+  "stars": 11
+}
