@@ -1,8 +1,12 @@
 FROM cr.hotio.dev/hotio/base@sha256:0a1206ee62c1950d36ff860578a95b8b2beeb42e9e302233c1b86544ca779d17
 
+ENV VPN_ENABLED="false" VPN_LAN_NETWORK="" VPN_CONF="wg0" VPN_ADDITIONAL_PORTS="" S6_SERVICES_GRACETIME=180000 VPN_IP_CHECK_DELAY=5
+
 EXPOSE 9696
 
 RUN apk add --no-cache libintl sqlite-libs icu-libs
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main privoxy iptables iproute2 openresolv wireguard-tools && \
+    apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community ipcalc
 
 ARG VERSION
 ARG PACKAGE_VERSION=${VERSION}
